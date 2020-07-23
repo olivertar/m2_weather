@@ -17,4 +17,4 @@ php bin/magento setup:static-content:deploy
 ```
 
 ## Screenshot
-![ScreenShot](https://github.com/olivertar/m2_geoip/blob/master/screen-shot/weather_settings.png)
+![ScreenShot](https://github.com/olivertar/m2_weather/blob/master/screen-shot/weather_settings.png)
