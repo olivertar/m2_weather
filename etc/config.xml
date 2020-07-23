@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <weather>
+            <general>
+                <ttl>3</ttl>
+                <city>London</city>
+                <message><![CDATA[Service not available. Try again later]]></message>
+                <url><![CDATA[api.openweathermap.org/data/2.5/forecast]]></url>
+                <units>metric</units>
+            </general>
+        </weather>
+    </default>
+</config>

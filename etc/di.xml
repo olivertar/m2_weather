@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Orangecat\Weather\Api\WeatherRepositoryInterface" type="Orangecat\Weather\Model\WeatherRepository"/>
+    <preference for="Orangecat\Weather\Api\Data\WeatherInterface" type="Orangecat\Weather\Model\Weather"/>
+    <preference for="Orangecat\Weather\Api\Data\WeatherSearchResultInterface" type="Magento\Framework\Api\SearchResults"/>
+
+    <preference for="Orangecat\Weather\Api\AjaxWeatherInterface" type="Orangecat\Weather\Model\Ajax\AjaxWeatherManagement" />
+</config>

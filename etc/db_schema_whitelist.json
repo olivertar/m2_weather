@@ -1,0 +1,16 @@
+{
+    "weather_cities": {
+        "column": {
+            "weather_id": true,
+            "city": true,
+            "jsondata": true,
+            "created_at": true
+        },
+        "index": {
+            "WEATHER_CITIES_CITY": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}

@@ -1,0 +1,28 @@
+<% if (data.list.length) { %>
+<table class="data table">
+    <thead>
+    <tr>
+        <th>Date/Time</th>
+        <th>Weather</th>
+        <th>Wind</th>
+        <th>Temperature</th>
+        <th>Cloud</th>
+        <th>Humidity</th>
+        <th>Pressure</th>
+    </tr>
+    </thead>
+<% _.each(data.list, function(item) { %>
+<tr>
+    <td><%- item.dt_txt %></td>
+    <td><%- item.weather[0].description %></td>
+    <td><%- item.wind.speed %></td>
+    <td><%- item.main.temp %></td>
+    <td><%- item.clouds.all %></td>
+    <td><%- item.main.humidity %></td>
+    <td><%- item.main.pressure %></td>
+</tr>
+<% }); %>
+</table>
+<% } else { %>
+<p><%- window.jQuery.mage.__('No items found.') %></p>
+<% } %>

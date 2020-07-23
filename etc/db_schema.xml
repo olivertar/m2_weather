@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="weather_cities" resource="default" engine="innodb" comment="Weather Cities Table">
+        <column xsi:type="smallint" name="weather_id" padding="6" unsigned="false" nullable="false" identity="true"
+                comment="Entity ID"/>
+        <column xsi:type="varchar" name="city" nullable="false" length="255" comment="City"/>
+        <column xsi:type="mediumtext" name="jsondata" nullable="true" comment="Data Json format"/>
+        <column xsi:type="timestamp" name="created_at" on_update="false" nullable="false" default="CURRENT_TIMESTAMP"
+                comment="Creation Time"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="weather_id"/>
+        </constraint>
+        <index referenceId="WEATHER_CITY" indexType="fulltext">
+            <column name="city"/>
+        </index>
+    </table>
+</schema>
